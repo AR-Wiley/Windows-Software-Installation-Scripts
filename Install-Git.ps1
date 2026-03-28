@@ -51,3 +51,5 @@ function Install_Git {
     }
 
 }
+
+Install_Git 
