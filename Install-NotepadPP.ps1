@@ -1,13 +1,12 @@
-﻿function Install-NotepadPP {
 
-    #Confirm running as admin
-
-    if (-Not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
-        Write-Host "Please run this script as Administrator."
-        return 
-    } else {
-        Write-Host "Running as Administrator."
-    }
+if (-Not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
+    Write-Host "Please run this script as Administrator."
+    return 
+} else {
+    Write-Host "Running as Administrator."
+}
+ 
+ function Install-NotepadPP {
   
    $notepadPPPath = "C:\Program Files\Notepad++\notepad++.exe"
 
